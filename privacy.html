@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="活動ログ / ActivityVaultが取得・保存・連携するデータと、停止・削除の方法について。"><title>プライバシーポリシー | 活動ログ</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html">活動ログ<span>ActivityVault</span></a><nav aria-label="ページ"><a href="privacy.html" aria-current="page">プライバシー</a><a href="terms.html">利用について</a></nav></header>
+  <main class="document">
+    <p class="eyebrow">PRIVACY</p><h1>プライバシーポリシー</h1><p class="lead">活動ログは、利用者自身の活動を記録・確認するためのAndroidアプリです。このページは、アプリ本体と紹介サイトにおけるデータの取扱いを説明します。</p><p class="subtle">提供者：mymactive / 説明対象：アプリ0.3.2 / 更新日：2026年9月13日</p>
+    <section><h2>1. 取得・参照する情報</h2><ul><li><strong>Health Connectの活動情報：</strong>許可された歩数、移動距離、活動カロリー、運動セッション。運動には種類、開始・終了時刻、タイトルやメモ、提供元が保存したラップ・区間などの関連情報が含まれる場合があります。</li><li><strong>記録の管理情報：</strong>日付・時刻、レコード識別子、提供元アプリや端末に関する情報、記録の改訂・削除状態、取得範囲、同期識別子、アプリが生成する連携用端末ID、送信・再試行の状態。</li><li><strong>連携先の情報：</strong>設定済みのGoogleスプレッドシート内の活動記録、日次集計、設定、未記録・要確認、更新履歴など、同期・照合に必要な範囲。</li><li><strong>認可情報：</strong>Googleが発行する、スプレッドシートへのアクセスに必要なアクセストークン。Googleアカウントのパスワードをアプリが取得することはありません。</li></ul><p>取得できる項目や履歴範囲は、利用者が許可した権限とHealth Connectの提供元の記録状況に依存します。Health Connectへの活動データの書き込みは行いません。</p></section>
+    <section><h2>2. 利用目的</h2><p>取得した情報は、端末への記録、日本時間の日次集計、Googleスプレッドシートへの連携、重複防止、変更・削除の反映、再試行、状態表示、既存記録との照合に使用します。連携した活動記録は、利用者のスプレッドシートの集計やレポートに利用されます。</p><p>アプリの機能として、健康データを広告配信、販売、信用評価、汎用AIモデルの学習のために利用することはありません。</p></section>
+    <section><h2>3. 保存場所と送信先</h2><p>Health Connectから取得した記録と同期状態は、Android端末内のアプリ専用領域に保存します。Google連携を有効にした場合は、活動の日次値、運動セッション、出所・取得時刻・連携識別子・照合結果などを、設定済みのGoogleスプレッドシートへ送信します。</p><p>送信はGoogleのOAuth認可を用い、HTTPSでGoogle Sheets APIへ直接行います。独自のデータ中継サーバーは使用しません。アクセストークンをアプリ独自のデータベースやログへ保存することはありません。</p><p>スプレッドシート内の情報にアクセスできる人は、利用者がGoogle側で設定した共有権限によって決まります。アプリの提供者へ健康データを別途送る機能はありません。利用者自身がシートや記録を他のサービス・人に共有した場合は、その共有先の取扱いも適用されます。</p></section>
+    <section><h2>4. Googleのユーザーデータ</h2><p>活動ログによるGoogle APIから受け取った情報の使用および他のアプリへの転送は、限定的な使用に関する要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。Googleでの認証・保存・処理には、Googleの利用規約とプライバシーポリシーも適用されます。</p></section>
+    <section><h2>5. 連携を止める・権限を取り消す</h2><p>アプリの「自動連携を停止・Google連携を解除」でGoogleスプレッドシートへの自動連携を停止できます。Googleアカウント側の<a href="https://myaccount.google.com/connections">サードパーティとの接続</a>からアクセス権を取り消すこともできます。端末での新しい取得を止める場合は、Health Connectで活動ログの読取り権限を取り消してください。</p><p>連携や権限を停止しても、すでに端末やスプレッドシートに保存された記録は自動では消えません。再び連携を有効にすると、残っている記録が送信される場合があります。</p></section>
+    <section><h2>6. 保存期間・訂正・削除</h2><p>端末内の記録に自動的な保存期限はありません。元のHealth Connectの記録の削除を検出した場合は、該当する記録やペイロードを削除し、連携用の削除通知を保持します。日次値の訂正前の値などが、スプレッドシートの更新ログに残る場合があります。</p><p>端末内の記録全体は、Android設定でアプリのストレージを消去するか、アプリをアンインストールして削除できます。これらの操作では履歴や未送信記録が失われます。Googleスプレッドシートに保存された記録は別に残ります。</p><p>スプレッドシートの記録を削除したい場合は、先に自動連携を停止し、該当する活動記録、受信データ、照合メモ、更新ログを利用者自身で削除してください。訂正前の値がGoogle側の変更履歴に残る場合があります。Google側の履歴・バックアップの保持はGoogleの仕様に従います。</p><p>本アプリから元のHealth Connectの記録は削除しません。元データはHealth Connectまたは提供元のアプリで管理してください。</p></section>
+    <section><h2>7. 紹介サイトの取扱い</h2><p>この紹介サイトには、健康データの入力フォーム、広告、アクセス解析スクリプトを設置していません。サイトの公開にGitHub Pagesを使用する場合、GitHubはセキュリティのためにアクセス元IPアドレスなどを記録します。詳細は<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご確認ください。</p></section>
+    <section><h2>8. お問い合わせ・変更</h2><p>アプリを案内した提供者、またはGoogle認証画面に表示されるユーザーサポートメールへお問い合わせください。内容を変更した場合は、このページの更新日と説明を更新します。利用目的や送信先を変更する場合は、必要に応じてアプリ内で説明・同意取得を行います。</p></section>
+  </main>
+  <footer><p><a href="index.html">活動ログについて</a><a href="terms.html">利用について</a></p></footer>
+</body>
+</html>

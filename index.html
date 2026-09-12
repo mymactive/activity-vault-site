@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="活動ログは、Health Connectの活動記録を端末に保存し、Google認証後に設定済みのGoogleスプレッドシートへ連携する個人用Androidアプリです。">
+  <meta name="referrer" content="no-referrer">
+  <title>活動ログ / ActivityVault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html">活動ログ<span>ActivityVault</span></a><nav aria-label="ページ"><a href="privacy.html">プライバシー</a><a href="terms.html">利用について</a></nav></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PERSONAL ACTIVITY RECORD</p>
+      <h1>毎日の活動を、<br>いつもの記録へ。</h1>
+      <p class="lead">歩数などの活動データをAndroid端末へ取得し、Google認証後に、設定済みのGoogleスプレッドシートへ連携する個人用アプリです。</p>
+      <a class="button" href="privacy.html">データの取扱いを読む</a>
+      <p class="subtle">このページはアプリの紹介です。健康データの入力や送信は行いません。</p>
+    </section>
+    <section aria-labelledby="features">
+      <h2 id="features">活動ログでできること</h2>
+      <div class="cards">
+        <article><span class="number">01</span><h3>活動を取得</h3><p>許可されたHealth Connectの歩数、移動距離、活動カロリー、運動セッションを読み取り、端末内に保存します。</p></article>
+        <article><span class="number">02</span><h3>日々の記録へ連携</h3><p>日本時間の日計を、設定済みのGoogleスプレッドシートへ送信します。既存記録を照合し、後日の変更も反映します。</p></article>
+        <article><span class="number">03</span><h3>状態を確認</h3><p>端末への取得と記録先への連携を分けて表示。最終成功時刻、未送信件数、失敗理由を確認できます。</p></article>
+      </div>
+    </section>
+    <section class="panel" aria-labelledby="connection">
+      <h2 id="connection">Googleアカウントを使用する理由</h2>
+      <p>設定済みのスプレッドシートを読み取り、活動記録・照合結果・更新履歴を書き込むためにGoogleのアクセス許可を使用します。認証にはGoogleの画面を使い、アプリがGoogleのパスワードを受け取ることはありません。</p>
+      <p>Google Sheetsの権限はスプレッドシート全般を対象とするものですが、現在のアプリ実装がアクセスするのは、設定された連携先です。アプリがスプレッドシートの共有設定を一般公開へ変更することはありません。</p>
+    </section>
+    <section aria-labelledby="getting-started"><h2 id="getting-started">使い始めるには</h2><ol><li>アプリの提供者からAndroidアプリと接続先の設定案内を受け取ります。</li><li>端末で必要なHealth Connectの読取り権限を許可します。</li><li>Googleへのアクセスを許可し、端末取得・連携それぞれの成功表示を確認します。</li></ol><p>バックグラウンド実行の時刻は、Androidの省電力設定・通信状態・権限によって変わります。提供元に記録がない項目は、実測のゼロとは区別します。</p></section>
+    <section aria-labelledby="contact"><h2 id="contact">提供者・お問い合わせ</h2><p>提供者：mymactive。個人利用向けに提供しています。</p><p>アプリを案内した提供者、またはGoogle認証画面に表示されるユーザーサポートメールへお問い合わせください。パスワードや認証トークンを送る必要はありません。</p></section>
+  </main>
+  <footer><p>活動ログ / ActivityVault · 説明対象：0.3.2 · 更新日：2026年9月13日</p><p><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用について</a></p></footer>
+</body>
+</html>

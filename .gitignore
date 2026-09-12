@@ -1,0 +1,24 @@
+# Local files and private application data
+.DS_Store
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*credentials*.json
+client_secret*.json
+token*.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.apk
+*.aab
+activity-vault.properties
+local.properties
+private/
+exports/
