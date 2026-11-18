@@ -22,18 +22,19 @@
       <h2 id="features">活動ログでできること</h2>
       <div class="cards">
         <article><span class="number">01</span><h3>活動を取得</h3><p>許可されたHealth Connectの歩数、移動距離、活動カロリー、運動セッションを読み取り、端末内に保存します。</p></article>
-        <article><span class="number">02</span><h3>日々の記録へ連携</h3><p>日本時間の日計を、設定済みのGoogleスプレッドシートへ送信します。既存記録を照合し、後日の変更も反映します。</p></article>
+        <article><span class="number">02</span><h3>日々の記録へ連携</h3><p>0.3.8では日本時間の歩数・距離・活動カロリー・運動時間を日計でスプレッドシートへ送ります。端末では直近7日間の歩数・距離・活動カロリーを比べられます。</p></article>
         <article><span class="number">03</span><h3>状態を確認</h3><p>端末への取得と記録先への連携を分けて表示。最終成功時刻、未送信件数、失敗理由を確認できます。</p></article>
       </div>
     </section>
     <section class="panel" aria-labelledby="connection">
       <h2 id="connection">Googleアカウントを使用する理由</h2>
       <p>設定済みのスプレッドシートを読み取り、活動記録・照合結果・更新履歴を書き込むためにGoogleのアクセス許可を使用します。認証にはGoogleの画面を使い、アプリがGoogleのパスワードを受け取ることはありません。</p>
+      <p>0.3.8の「体重をPixelに連携」では、希望する場合にスプレッドシートの体重と測定日時をHealth Connectに反映できます。アプリでこの機能を有効にし、体重の書き込み権限を許可すると使えます。</p>
       <p>Google Sheetsの権限はスプレッドシート全般を対象とするものですが、現在のアプリ実装がアクセスするのは、設定された連携先です。アプリがスプレッドシートの共有設定を一般公開へ変更することはありません。</p>
     </section>
     <section aria-labelledby="getting-started"><h2 id="getting-started">使い始めるには</h2><ol><li>アプリの提供者からAndroidアプリと接続先の設定案内を受け取ります。</li><li>端末で必要なHealth Connectの読取り権限を許可します。</li><li>Googleへのアクセスを許可し、端末取得・連携それぞれの成功表示を確認します。</li></ol><p>バックグラウンド実行の時刻は、Androidの省電力設定・通信状態・権限によって変わります。提供元に記録がない項目は、実測のゼロとは区別します。</p></section>
     <section aria-labelledby="contact"><h2 id="contact">提供者・お問い合わせ</h2><p>提供者：mymactive。個人利用向けに提供しています。</p><p>アプリを案内した提供者、またはGoogle認証画面に表示されるユーザーサポートメールへお問い合わせください。パスワードや認証トークンを送る必要はありません。</p></section>
   </main>
-  <footer><p>活動ログ / ActivityVault · 説明対象：0.3.2 · 更新日：2026年9月13日</p><p><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用について</a></p></footer>
+  <footer><p>活動ログ / ActivityVault · 説明対象：0.3.2〜0.3.7、0.3.8 · 更新日：2026年11月18日</p><p><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用について</a></p></footer>
 </body>
 </html>
